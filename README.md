@@ -6,7 +6,10 @@ In the config you have to enter your gmail username, gmail password, and a defau
 
 ### example
 ```python
-@email_me_when_ready(recipient)
+from email_me_when_ready import EmailMeWhenReady
+
+
+@EmailMeWhenReady(recipient)
 def your_function_here(*args, **kwargs):
     do stuff
     return stuff
